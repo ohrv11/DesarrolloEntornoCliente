@@ -38,7 +38,7 @@ const info = document.getElementById('info');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const randomBtn = document.querySelector('.random-btn');
-
+const stopBtn = document.querySelector('.stop-btn');
 // set starting item
 let currentItem = 0;
 
@@ -82,3 +82,20 @@ randomBtn.addEventListener('click', function () {
   currentItem = Math.floor(Math.random() * reviews.length);
   showPerson(currentItem);
 });
+
+//Ejercicio7
+let intervalo = setInterval(function() {
+ 
+    currentItem++;
+    if (currentItem > reviews.length - 1) {
+      currentItem = 0;
+    }
+    showPerson(currentItem);
+  
+ 
+}, 5000);
+
+//Ejercicio8
+stopBtn.addEventListener('click', function(){
+  clearInterval(intervalo);
+})

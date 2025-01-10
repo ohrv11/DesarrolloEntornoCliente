@@ -1,16 +1,34 @@
 - PREGUNTAS CONCEPTUALES -
 1. ¿Qué es el evento DOMContentLoaded y por qué se utiliza en este proyecto?
 
+ El evento DOMContentLoaded se dispara cuando el contenido del archivo HTML se ha cargado en el navegador, 
+ sin necesitar esperar imágenes, hojas de estilo etc. El evento se utiliza para cargar la imagen,la review, 
+ el autor de la review y el puesto de trabajo
+
 2. ¿Cómo funciona la navegación entre reseñas en este proyecto?
+
+nextBtn suma uno a la cuenta de reseñas para que, al alcanzar el maximo de reseñas disponibles,
+la cuenta se reinicie a cero y se vuelva a mostrar la primera reseña.
+
+prevBtn resta uno a la cuenta de reseñas para que, si la cuenta es menor que cero, 
+se pueda mostrar la última reseña de la lista de reseñas.
 
 3. ¿Qué hace la función showPerson y cómo se relaciona con el array reviews?
 
+La función showPerson carga los valores del nombre, el trabajo, la foto y la reseña, los cuales 
+se encuentran dentro del array reviews.
+
 4. ¿Qué sucede si el valor de currentItem es mayor que la longitud del array reviews?
+
+currentItem se inicializa a 0 para poder mostrar la primera reseña de la lista.
 
 5. ¿Cómo se genera una reseña aleatoria y qué función se utiliza para ello?
 
-6. ¿Qué pasaría si el array reviews estuviera vacío?
+Se utiliza Math.random, generando la reseña aleatoria a partir del indice del array mediante 
+recorrerla con un bucle for.
 
+6. ¿Qué pasaría si el array reviews estuviera vacío?
+Ninguna reseña podría cargarse y ninguno de los datos estaría disponible.
 
 - MODIFICACIONES SOBRE EL CÓDIGO -
 7. ¿Cómo podrías modificar el código para que la navegación entre reseñas sea automática cada 5 segundos?
