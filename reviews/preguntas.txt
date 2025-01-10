@@ -1,0 +1,18 @@
+- PREGUNTAS CONCEPTUALES -
+1. ¿Qué es el evento DOMContentLoaded y por qué se utiliza en este proyecto?
+
+2. ¿Cómo funciona la navegación entre reseñas en este proyecto?
+
+3. ¿Qué hace la función showPerson y cómo se relaciona con el array reviews?
+
+4. ¿Qué sucede si el valor de currentItem es mayor que la longitud del array reviews?
+
+5. ¿Cómo se genera una reseña aleatoria y qué función se utiliza para ello?
+
+6. ¿Qué pasaría si el array reviews estuviera vacío?
+
+
+- MODIFICACIONES SOBRE EL CÓDIGO -
+7. ¿Cómo podrías modificar el código para que la navegación entre reseñas sea automática cada 5 segundos?
+
+8. ¿Cómo podrías agregar un botón para detener y reanudar la navegación automática?
